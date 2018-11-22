@@ -1,25 +1,31 @@
 <div class="container">
+    <div class="jumbotron">
+      <h1 class="text-center">Welcome to Gmail</h1>
+      <p class="lead text-center">...back in a days ;-)</p>
+    </div>
+</div>
+<div class="container">
     <div class="row">
-        <table class="table col-md-6"><caption>Emails</caption>
-            <thead>
+        <table class="table col-md-4">
+            <thead class='thead-light'>
                 <tr >
                     <th  class=" col-md-2">#</th>
-                    <th  class="col-md-4">objet</th>
+                    <th  class="col-md-4">Objet</th>
                 </tr>
             </thead>
             <% @emails.each do |mail|  %>
-            <tbody>
+            <tbody class='bgcolor'>
                 <tr >
-                    <th id='<%= mail.id %>'><%=mail.id%></th>
-                    <td id='object<%= mail.id %>'><%=link_to mail.object, email_path(mail.id), remote: true%></td>
+                    <th class="reade"  id='<%= mail.id %>'><%=mail.id%></th>
+                    <td class="read"  id='object<%= mail.id %>'> <%=link_to mail.object, email_path(mail.id), remote: true%> </td>
                     <%end%>
                 </tr>  
             </tbody>
         </table>
-        <table class="table col-md-6">
-            <thead>
+        <table class="table col-md-4 offset-1">
+            <thead class='thead-light'>
                 <tr >
-                    <th  class=" col-md-2 center" >email</th>
+                    <th  class=" col-md-2 center" >Email View</th>
                 </tr>
             </thead>
             <tbody>

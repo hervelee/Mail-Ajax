@@ -9,10 +9,6 @@ class EmailsController < ApplicationController
 
 	def show
 		@email = Email.find(params[:id])
-		p"*" *50
-		p params
-		p @email.id
-		p"*" *50
 		
 		respond_to do |format|
         format.html {}

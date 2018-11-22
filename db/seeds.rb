@@ -17,6 +17,6 @@ require 'faker'
     my_task.save
   end
 end
-10.times do
+30.times do
 	Email.create(object: Faker::BackToTheFuture.character, body:Faker::BackToTheFuture.quote)
 end

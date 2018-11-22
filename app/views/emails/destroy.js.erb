@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 let my_mail = $("<%= j (render 'layouts/email_destroy', email: @email) %>");
 $('#<%= @email.id %>').remove();
-$('#object<%= @email.id %>').remove();
+$('#object<%= @email.id %>').remove(alert("😱 Votre email a été suprimé !! 🖕"));
 // Je crée ma variable new_gossip. Le j signifie escape javascript et permet d'executer de l'erb.
 
 $('#render').html(my_mail);

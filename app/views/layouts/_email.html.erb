@@ -3,8 +3,8 @@
 <p class='text-center' ><%= email.body  %> </p>
 
 <p class='text-center' ><%= link_to email, remote: true, method: :delete,  data: { confirm: 'Are you sure?' } do %>
-  <button>Delete!</button>
-<% end %>
+  <button type="button" class="btn btn-danger">Delete!</button>
+	<% end %>
 </p>
 
 

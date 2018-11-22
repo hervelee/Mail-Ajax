@@ -1,4 +1,11 @@
 $(document).ready(function() {
+
+    $(".read").each(function() {
+        if ($(this).attr('value') == "true") {
+            $(this).css("background-color", "#FFF");
+        }; 
+});
+
   
 
   //TAB POUR LES CATEGORY
