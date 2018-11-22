@@ -2,7 +2,7 @@
 Projet réalisé par @vano from Montpellier
   
   
-## Ce travail est à consulter en Localhost en suivant ce process :  
+##  Consultation en Localhost en suivant ce process :  
 *1* `cloner ce repo`  
 *2* `bundle install`  
 *3* `rails db:create`  
@@ -11,5 +11,5 @@ Projet réalisé par @vano from Montpellier
 *6* `rails server`  
 *7* `lancer localhost dans votre navigateur`  
 
-lien heroku: https://jquerywebsite.herokuapp.com/
+## Sinon lien heroku: https://jquerywebsite.herokuapp.com/
 
