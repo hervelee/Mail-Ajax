@@ -1,0 +1,10 @@
+$(document).ready(function() {
+
+let my_mail = $("<%= j (render 'layouts/email', email: @email) %>");
+// Je crée ma variable new_gossip. Le j signifie escape javascript et permet d'executer de l'erb.
+$('#<%= @email.id %>').css('background-color','green');
+
+$('#render').html(my_mail);
+
+});
+ 

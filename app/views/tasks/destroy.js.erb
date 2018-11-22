@@ -1,0 +1,7 @@
+
+		$('body').css("background-color", 'red')
+		
+		$('.delete_task').bind('ajax:success', function() {
+			$(this).parent().fadeOut();
+		});
+

@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <table class="table col-md-6"><caption>Emails</caption>
+            <thead>
+                <tr >
+                    <th  class=" col-md-2">#</th>
+                    <th  class="col-md-4">objet</th>
+                </tr>
+            </thead>
+            <% @emails.each do |mail|  %>
+            <tbody>
+                <tr >
+                    <th id='<%= mail.id %>'><%=mail.id%></th>
+                    <td id='object<%= mail.id %>'><%=link_to mail.object, email_path(mail.id), remote: true%></td>
+                    <%end%>
+                </tr>  
+            </tbody>
+        </table>
+        <table class="table col-md-6">
+            <thead>
+                <tr >
+                    <th  class=" col-md-2 center" >email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr >
+                    <td id='render'></td>
+                    
+                </tr>  
+            </tbody>
+        </table>
+    </div>
+</div>

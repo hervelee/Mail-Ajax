@@ -1,0 +1,12 @@
+<div class="container">	
+<h2 class='text-center'> <%= email.object  %></h2> <br>
+<p class='text-center' ><%= email.body  %> </p>
+
+<p class='text-center' ><%= link_to email, remote: true, method: :delete,  data: { confirm: 'Are you sure?' } do %>
+  <button>Delete!</button>
+<% end %>
+</p>
+
+
+</div>
+
